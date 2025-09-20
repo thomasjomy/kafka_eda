@@ -1,0 +1,9 @@
+curl -i -X POST -H "Content-Type: application/json" -d '{"message":"Hello_Kafka"}' http://localhost:9090/send
+
+
+curl -X POST  http://localhost:8080/send
+
+
+curl -H "Content-Type: application/json" --data '@body.json' http://localhost:9090/send
+
+curl -X POST http://localhost:9090/send?message=Hello_Kafka
